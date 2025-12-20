@@ -17,7 +17,7 @@ export default function ProductList() {
   return (
     <div className="product-grid">
       {items.map(product => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product.id} product={product} />  // It is reused for each product -- (Reuseable Component)
       ))}
     </div>
   );
